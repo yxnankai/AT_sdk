@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerEnvironment>PATH=$(CX_SDK_ROOT_64)\cxBaseLib\bin;$(CX_SDK_ROOT_64)\cxCamLib\bin;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\x64\vc14\bin;$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>PATH=$(CX_SDK_ROOT_64)\cxBaseLib\bin;$(CX_SDK_ROOT_64)\cxCamLib\bin;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\x64\vc14\bin;$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <LocalDebuggerEnvironment>PATH=$(CX_SDK_ROOT_32)\cxBaseLib\bin;$(CX_SDK_ROOT_32)\cxCamLib\bin;$(CX_SDK_ROOT_32)\ThirdParty\opencv-3.4.2\build_win_vc140_32_shared_vtk_static\x86\vc14\bin;$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <LocalDebuggerEnvironment>PATH=$(CX_SDK_ROOT_32)\cxBaseLib\bin;$(CX_SDK_ROOT_32)\cxCamLib\bin;$(CX_SDK_ROOT_32)\ThirdParty\opencv-3.4.2\build_win_vc140_32_shared_vtk_static\x86\vc14\bin;$(PATH)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

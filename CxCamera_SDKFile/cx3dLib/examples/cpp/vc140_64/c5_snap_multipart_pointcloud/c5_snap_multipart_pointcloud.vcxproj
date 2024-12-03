@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{078E6260-6274-4175-819F-9C97F610A8D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>c5_snap_multipart_pointcloud</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CONSOLE;AT_NO_AUTOMATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CX_SDK_ROOT_64)\cxCamLib\include;$(CX_SDK_ROOT_64)\cx3dLib\include;$(CX_SDK_ROOT_64)\cx3dLib\wrapper\cpp\include;$(CX_SDK_ROOT_64)\cxBaseLib\include;$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include;$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include;..\..\..\..\..\cxCamLib\examples\cpp;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\include;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CX_SDK_ROOT_64)\cxCamLib\lib\cxCamLib_3_1.lib;$(CX_SDK_ROOT_64)\cx3dLib\lib\Cx3dlib_3_1.lib;$(CX_SDK_ROOT_64)\cxBaseLib\lib\CxBaseLib_3_0.lib;opencv_calib3d342d.lib;opencv_features2d342d.lib;opencv_viz342d.lib;opencv_highgui342d.lib;opencv_flann342d.lib;opencv_videoio342d.lib;opencv_imgcodecs342d.lib;opencv_imgproc342d.lib;opencv_core342d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\x64\vc14\lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONSOLE;AT_NO_AUTOMATIC_LIBS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(CX_SDK_ROOT_64)\cxCamLib\include;$(CX_SDK_ROOT_64)\cx3dLib\include;$(CX_SDK_ROOT_64)\cx3dLib\wrapper\cpp\include;$(CX_SDK_ROOT_64)\cxBaseLib\include;$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include;$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include;..\..\..\..\..\cxCamLib\examples\cpp;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\include;$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(CX_SDK_ROOT_64)\cxCamLib\lib\cxCamLib_3_1.lib;$(CX_SDK_ROOT_64)\cx3dLib\lib\Cx3dlib_3_1.lib;$(CX_SDK_ROOT_64)\cxBaseLib\lib\CxBaseLib_3_0.lib;opencv_calib3d342.lib;opencv_features2d342.lib;opencv_viz342.lib;opencv_highgui342.lib;opencv_flann342.lib;opencv_videoio342.lib;opencv_imgcodecs342.lib;opencv_imgproc342.lib;opencv_core342.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CX_SDK_ROOT_64)\ThirdParty\opencv-3.4.2\build_win_vc140_64_shared_vtk_static\x64\vc14\lib\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cx3dLib\wrapper\cpp\include\AT\cx\c3d\Calib.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cx3dLib\wrapper\cpp\include\AT\cx\c3d\PointCloud.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cx3dLib\wrapper\cpp\include\AT\cx\c3d\ZMap.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\base.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Chunk.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\exception.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Image.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Point3.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Variant.h" />
+    <ClInclude Include="..\..\..\..\..\cx3dLib\examples\cpp\cx_3d_common.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\include\cx_cam.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\include\cx_cam_param.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\Device.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceBuffer.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceEvent.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceFactory.h" />
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceInfo.h" />
+    <ClInclude Include="..\..\..\..\..\cxCamLib\examples\cpp\cx_cam_common.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\cx3dLib\examples\cpp\c5_snap_multipart_pointcloud.cpp" />
+    <ClCompile Include="..\..\..\..\..\cx3dLib\examples\cpp\cx_3d_common.cpp" />
+    <ClCompile Include="..\..\..\..\..\cx3dLib\examples\cpp\cx_3d_common2.cpp" />
+    <ClCompile Include="..\..\..\..\..\cxCamLib\examples\cpp\cx_cam_common.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

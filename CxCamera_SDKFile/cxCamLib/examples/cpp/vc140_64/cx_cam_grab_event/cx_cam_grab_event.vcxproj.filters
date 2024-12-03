@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\base.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Chunk.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\exception.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Image.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxBaseLib\wrapper\cpp\include\AT\cx\Variant.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\Device.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceBuffer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceFactory.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceEvent.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DeviceInfo.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="$(CX_SDK_ROOT_64)\cxCamLib\wrapper\cpp\include\AT\cx\DevicePort.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+	<ClInclude Include="..\..\..\..\..\cxCamLib\examples\cpp\cx_cam_common.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\cxCamLib\examples\cpp\cli_utils.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\cxCamLib\examples\cpp\cx_cam_grab_event.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cxCamLib\examples\cpp\cx_cam_common.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\cxCamLib\examples\cpp\cli_utils.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
